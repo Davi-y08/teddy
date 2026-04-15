@@ -1,40 +1,29 @@
 import React from 'react';
-import { Avatar } from 'primereact/avatar';
-import { Button } from 'primereact/button';
 import { Card } from 'primereact/card';
-import Curriculo from '../../assets/Curriculo_Kaya_Haufe.pdf';
-import profileImage from '../../assets/profile.jpeg';
 
 export default function Sobre() {
   const footer = (
-    <div className="flex flex-column align-items-center">
-      <Avatar image={profileImage} size="xlarge" shape="circle" />
-      <span className="mt-3">Desenvolvido por Kayã Haufe.</span>
-
-      <div className="sobre-footer-actions">
-        <a href="https://www.linkedin.com/in/kayahaufe" target="_blank" rel="noreferrer">
-          <Button label="LinkedIn" icon="pi pi-linkedin" className="linkedin-button" />
-        </a>
-
-        <a href={Curriculo} download="Curriculo_Kaya_Haufe.pdf">
-          <Button label="Curriculo" icon="pi pi-download" className="p-button-success" />
-        </a>
-      </div>
+    <div className="sobre-creator">
+      <span className="sobre-creator__eyebrow">Criacao</span>
+      <strong className="sobre-creator__name">Scentia Vinces</strong>
+      <span className="sobre-creator__description">
+        Grupo responsavel pela concepcao e evolucao do projeto.
+      </span>
     </div>
   );
 
   return (
     <div className="sobre flex justify-content-center align-items-center">
       <Card
-        title="Aplicacao de Gestao de Empresas Externas e Parceiros"
+        title="Stealth Lens"
         footer={footer}
       >
         <section>
           <h2>Visao Geral</h2>
           <p>
-            A aplicacao de <strong>Gestao de Empresas Externas e Parceiros</strong> foi criada para
-            organizar o cadastro e a manutencao de empresas externas e parceiros. O sistema oferece
-            listagem, criacao, edicao, exclusao, busca e paginacao em uma interface unica.
+            O <strong>Stealth Lens</strong> foi criado para organizar o cadastro e a manutencao de
+            empresas externas e parceiros. O sistema oferece listagem, criacao, edicao, exclusao,
+            busca e paginacao em uma interface unica.
           </p>
         </section>
 

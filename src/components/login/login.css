@@ -1,5 +1,8 @@
 body.login-page {
-    background-image: url("../../assets/bg.jpg");
+    background-image:
+        radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 28%),
+        linear-gradient(135deg, rgba(3, 5, 10, 0.84) 0%, rgba(7, 16, 26, 0.76) 48%, rgba(3, 5, 10, 0.92) 100%),
+        url("../../assets/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,15 +11,34 @@ body.login-page {
 }
 
 .login-screen {
-    min-height: 100vh;
+    min-height: calc(100vh - 3rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .login-card {
-    width: min(100%, 22rem);
+    width: min(100%, 26rem);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg, rgba(8, 12, 20, 0.96) 0%, rgba(4, 8, 15, 0.9) 100%);
+    box-shadow: 0 24px 60px rgba(3, 5, 10, 0.5);
+    overflow: hidden;
+}
+
+.login-card .p-card-body {
+    padding: 1.75rem;
+}
+
+.login-card .p-card-title {
+    margin: 0;
+    color: var(--app-text-strong);
+    font-size: 1.7rem;
+    letter-spacing: -0.02em;
+}
+
+.login-card .p-card-content {
+    padding-top: 1.15rem;
 }
 
 .login-form {
@@ -24,6 +46,10 @@ body.login-page {
     gap: 1rem;
 }
 
+.login-form .p-button {
+    margin-top: 0.35rem;
+}
+
 .login-error {
-    color: #b42318;
+    color: #fecdd3;
 }

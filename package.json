@@ -1,8 +1,8 @@
 {
-  "name": "teddy-vite",
+  "name": "stealth-lens",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kayahaufe.github.io/teddy",
+  "homepage": "https://kayahaufe.github.io/stealth-lens",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

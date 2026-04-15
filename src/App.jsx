@@ -1,11 +1,10 @@
 import React, { Suspense, lazy } from 'react';
 import { Link, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-import 'primereact/resources/themes/saga-orange/theme.css';
+import 'primereact/resources/themes/lara-dark-cyan/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import { Menubar } from 'primereact/menubar';
-import LogoTeddy from './assets/logo-teddy.png';
 import './App.css';
 import ProtectedRoute from './components/common/protected-route';
 import { ROUTES } from './constants/app-config';
@@ -62,14 +61,14 @@ function App() {
   ];
 
   const start = (
-    <Link to={ROUTES.partners}>
-      <img alt="logo" src={LogoTeddy} height="40" className="mr-2" />
+    <Link to={ROUTES.partners} className="app-brand">
+      <span className="app-brand__name">Stealth Lens</span>
     </Link>
   );
 
   const end = (
     <div className="welcome flex align-items-center gap-2">
-      <span className="mx-2">{username ? `${getGreeting()}, ${username}` : ''}</span>
+      <span className="welcome__label">{username ? `${getGreeting()}, ${username}` : ''}</span>
     </div>
   );
 

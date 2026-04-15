@@ -1,4 +1,4 @@
-# Teddy
+# Stealth Lens
 
 Aplicacao React para cadastro e gestao de parceiros e empresas externas, usando PrimeReact e Vite.
 
@@ -42,13 +42,13 @@ O resultado fica em `dist/`.
 Build da imagem:
 
 ```sh
-docker build -t teddy .
+docker build -t stealth-lens .
 ```
 
 Executar localmente:
 
 ```sh
-docker run -p 4173:80 teddy
+docker run -p 4173:80 stealth-lens
 ```
 
 Ou com Compose:
