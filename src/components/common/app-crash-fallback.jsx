@@ -16,21 +16,21 @@ export default function AppCrashFallback({ error, onReset }) {
 
   return (
     <main className="fatal-state" role="alert" aria-live="assertive">
-      <div className="fatal-state__content">
-        <span className="fatal-state__eyebrow">Aplicacao indisponivel</span>
-        <h1 className="fatal-state__title">Ocorreu uma falha inesperada.</h1>
-        <p className="fatal-state__description">
+      <div className="fatal-box">
+        <span className="fatal-tag">Aplicacao indisponivel</span>
+        <h1 className="fatal-title">Ocorreu uma falha inesperada.</h1>
+        <p className="fatal-text">
           A interface foi protegida para evitar tela branca. Tente recarregar o estado da aplicacao
           ou voltar ao login para continuar.
         </p>
 
-        <div className="fatal-state__actions">
+        <div className="fatal-actions">
           <Button label="Tentar novamente" icon="pi pi-refresh" onClick={onReset} />
           <Button label="Voltar ao login" outlined onClick={handleGoToLogin} />
         </div>
 
         {shouldShowDetails && (
-          <details className="fatal-state__details">
+          <details className="fatal-details">
             <summary>Detalhes tecnicos</summary>
             <pre>{error.message}</pre>
           </details>

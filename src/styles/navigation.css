@@ -1,0 +1,58 @@
+.custom-menubar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-bottom: 1px solid var(--borda-clara);
+    border-radius: 0;
+    background: linear-gradient(180deg, rgba(8, 12, 20, 0.92) 0%, rgba(5, 9, 17, 0.84) 100%);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 14px 36px rgba(3, 5, 10, 0.28);
+}
+
+.custom-menubar .p-menubar-root-list,
+.custom-menubar .p-submenu-list {
+    background: transparent;
+}
+
+.custom-menubar .p-menubar-root-list {
+    gap: 0.35rem;
+}
+
+.custom-menubar .p-menuitem-link {
+    border-radius: 999px;
+    transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.custom-menubar .p-menuitem-text,
+.custom-menubar .p-submenu-icon,
+.welcome {
+    color: var(--texto-claro);
+}
+
+.custom-menubar .p-menuitem-link:hover,
+.custom-menubar .p-menuitem-link:focus,
+.custom-menubar .p-menuitem-link:focus-visible {
+    color: var(--texto-forte);
+    background: rgba(34, 211, 238, 0.12);
+}
+
+.marca {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.marca-nome {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--texto-forte);
+}
+
+.saudacao {
+    white-space: nowrap;
+    font-size: 0.95rem;
+    color: var(--texto-claro);
+}

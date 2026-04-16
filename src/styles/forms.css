@@ -1,0 +1,69 @@
+.dialog-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.dialog-grid .field,
+.login-form .field {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.field label,
+.field-checkbox label {
+    font-size: 0.95rem;
+    color: var(--texto-claro);
+}
+
+.field-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.p-error {
+    color: #fecdd3;
+}
+
+.p-inputtext,
+.p-inputtextarea {
+    border-color: var(--borda);
+    color: var(--texto);
+    background: var(--painel-suave);
+}
+
+.p-inputtext:hover,
+.p-inputtextarea:hover {
+    border-color: rgba(148, 163, 184, 0.28);
+}
+
+.p-inputtext::placeholder,
+.p-inputtextarea::placeholder {
+    color: var(--texto-fraco);
+}
+
+.p-checkbox .p-checkbox-box,
+.p-radiobutton .p-radiobutton-box {
+    border-color: var(--borda);
+    background: var(--painel-suave);
+}
+
+.p-checkbox .p-checkbox-box.p-highlight,
+.p-radiobutton .p-radiobutton-box.p-highlight {
+    border-color: var(--ciano-forte);
+    background: linear-gradient(135deg, var(--azul) 0%, var(--ciano-forte) 100%);
+}
+
+.p-checkbox .p-checkbox-box:not(.p-disabled):hover,
+.p-radiobutton .p-radiobutton-box:not(.p-disabled):hover {
+    border-color: rgba(34, 211, 238, 0.4);
+}
+
+.p-button:focus-visible,
+.p-inputtext:enabled:focus,
+.p-inputtextarea:enabled:focus,
+.p-radiobutton .p-radiobutton-box:focus,
+.p-checkbox .p-checkbox-box:focus,
+.p-paginator .p-paginator-page:focus {
+    box-shadow: var(--foco);
+}

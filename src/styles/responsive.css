@@ -1,0 +1,28 @@
+@media (max-width: 960px) {
+    .custom-menubar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .page-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .toolbar-actions,
+    .search-container {
+        width: 100%;
+    }
+
+    .toolbar-actions .p-button,
+    .search-container .p-inputtext,
+    .fatal-actions .p-button,
+    .p-dialog .p-dialog-footer .p-button {
+        width: 100%;
+    }
+
+    .confirmation-content {
+        align-items: flex-start;
+    }
+}

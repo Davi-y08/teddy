@@ -1,0 +1,62 @@
+.sobre {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0 2rem;
+}
+
+.sobre .p-card {
+    width: min(100%, 960px);
+}
+
+.sobre .p-card .p-card-title {
+    font-size: clamp(1.65rem, 2.4vw, 2rem);
+    line-height: 1.2;
+}
+
+.sobre .p-card section + section {
+    margin-top: 1.5rem;
+}
+
+.sobre .p-card h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.05rem;
+    color: var(--texto-forte);
+}
+
+.sobre .p-card p,
+.sobre .p-card li {
+    line-height: 1.7;
+    color: var(--texto-claro);
+}
+
+.sobre .p-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.autoria {
+    display: grid;
+    gap: 0.35rem;
+    justify-items: center;
+    text-align: center;
+    padding: 1rem 0 0.25rem;
+}
+
+.autoria-titulo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ciano);
+}
+
+.autoria-grupo {
+    font-size: 1.05rem;
+    color: var(--texto-forte);
+}
+
+.autoria-texto {
+    max-width: 28rem;
+    line-height: 1.6;
+    color: var(--texto-suave);
+}

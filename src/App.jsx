@@ -61,14 +61,14 @@ function App() {
   ];
 
   const start = (
-    <Link to={ROUTES.partners} className="app-brand">
-      <span className="app-brand__name">Stealth Lens</span>
+    <Link to={ROUTES.partners} className="marca">
+      <span className="marca-nome">Stealth Lens</span>
     </Link>
   );
 
   const end = (
     <div className="welcome flex align-items-center gap-2">
-      <span className="welcome__label">{username ? `${getGreeting()}, ${username}` : ''}</span>
+      <span className="saudacao">{username ? `${getGreeting()}, ${username}` : ''}</span>
     </div>
   );
 

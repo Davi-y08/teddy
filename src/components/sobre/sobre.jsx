@@ -3,10 +3,10 @@ import { Card } from 'primereact/card';
 
 export default function Sobre() {
   const footer = (
-    <div className="sobre-creator">
-      <span className="sobre-creator__eyebrow">Criacao</span>
-      <strong className="sobre-creator__name">Scentia Vinces</strong>
-      <span className="sobre-creator__description">
+    <div className="autoria">
+      <span className="autoria-titulo">Criacao</span>
+      <strong className="autoria-grupo">Scentia Vinces</strong>
+      <span className="autoria-texto">
         Grupo responsavel pela concepcao e evolucao do projeto.
       </span>
     </div>
